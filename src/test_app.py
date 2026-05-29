@@ -17,8 +17,8 @@ def client():
     yield client
     # Teardown the database
     with app.app_context():
-       db.session.remove()
-       db.drop_all()
+        db.session.remove()
+        db.drop_all()
 
 
 def test_home_page(client):
